@@ -16,9 +16,10 @@ async function getUsers() {
 			image.setAttribute('src', user.image)
 			h2.innerHTML = `Title: ${user.title}`
 			p.innerHTML = user.description
-			h3.innerHTML = `Price: ${user.price}`
+			h3.innerHTML = `Price: ${user.price} $`
 			card.append(image, h2, p, h3)
 			box.appendChild(card)
+			console.log(card)
 		})
 	} catch (error) {
 		console.log(error.message)
